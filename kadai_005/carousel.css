@@ -1,0 +1,113 @@
+/* ----------------------------------------------- 全体の文字色修正と下部の余白の調整 */
+body {
+  /* padding-top: 3rem; */
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* ----------------------------------------------- カルーセルのカスタマイズ */
+.carousel {
+  margin-bottom: 4rem;
+
+   /* 💡これらを追加：最大幅の制限を解除し、画面幅100%に強制固定する 個人的に気になったところ*/
+  /* width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important; */
+
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* min-width から width に変更 個人的に気になったところ*/
+  min-width: 100%;
+  /* width: 100%;    */
+  height: 32rem;
+  /* これを追加：隙間なく画像をフィットさせる 個人的に気になったところ */
+  /* object-fit: cover; */
+}
+
+/* ----------------------------------------------- マーケティングコンテンツ */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+/* ----------------------------------------------- フィーチャーレット */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+/* ----------------------------------------------- レスポンシブデザイン */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* カルーセル左右ボタンの背景の曇り（グラデーション影）と縦線を完全に消す　個人的に気になったところのため
+/* .carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  opacity: 0.5; /* 矢印の濃さ */
+  
+  /* 💡ここを追加：浮き出ている縦線（枠線）を完全に消し去る */
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* マウスを乗せたときも線を消したままにする */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: none !important;
+  opacity: 0.9;
+  
+  /* 💡ここにも追加 */
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important; */
+} */
